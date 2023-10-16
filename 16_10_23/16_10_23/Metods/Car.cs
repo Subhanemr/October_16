@@ -23,7 +23,7 @@ namespace _16_10_23.Metods
 
         public bool Drive(double kilometers)
         {
-            double fuelRequired = kilometers / 100 * FuelConsumption;
+            double fuelRequired = kilometers * FuelConsumption / 100;
             if (fuelRequired <= Fuel)
             {
                 MileAge += kilometers;
